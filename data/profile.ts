@@ -94,6 +94,32 @@ export const profile: ProfileData = {
         "Análisis de Datos",
       ],
     },
+    {
+      company: "Sistema de Bibliotecas UdeA",
+      role: "Desarrollador Full-Stack (Proyecto Integrador)",
+      period: "Ago 2023 — Nov 2023",
+      description:
+        "Diseñé e implementé un sistema moderno de control de acceso para la biblioteca universitaria integrando autenticación biométrica por huellas dactilares. Desarrollé la arquitectura del software asegurando la protección de datos sensibles de los estudiantes y logrando una validación de identidades en tiempo real altamente eficiente.",
+      technologies: [
+        "Autenticación Biométrica",
+        "Arquitectura de Software",
+        "Seguridad de Datos",
+        "Desarrollo Full-Stack",
+      ],
+    },
+    {
+      company: "Universidad de Antioquia",
+      role: "Monitor Académico & Soporte Técnico",
+      period: "Feb 2022 — Nov 2023",
+      description:
+        "Proporcioné soporte técnico integral y asesoría en fundamentos de programación e ingeniería de software. Fui responsable de diagnosticar y resolver incidencias en los laboratorios de cómputo, optimizando los recursos tecnológicos. Lideré sesiones prácticas que fortalecieron mis habilidades de comunicación asertiva y liderazgo técnico.",
+      technologies: [
+        "Soporte TI",
+        "Liderazgo Técnico",
+        "Comunicación Asertiva",
+        "Resolución de Problemas",
+      ],
+    },
   ],
 
   education: [
