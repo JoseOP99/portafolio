@@ -36,6 +36,14 @@ export default function Document() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_CO" />
+
+        {/* ── Geo SEO ──────────────────────────── */}
+        <meta name="geo.region" content="CO-ANT" />
+        <meta name="geo.placename" content="Medellín" />
+        <meta name="geo.position" content="6.2442;-75.5812" />
+        <meta name="ICBM" content="6.2442, -75.5812" />
+        
+        <meta name="keywords" content="Jose Carlos Ortiz, Power Platform, RPA Developer, Automatización de Procesos, Power Automate, Power Apps, Desarrollador Web, Medellín, Colombia" />
       </Head>
       <body>
         <Main />

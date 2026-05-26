@@ -14,16 +14,20 @@ const config: Config = {
       },
       colors: {
         surface: {
-          primary: "#0a0a0b",
-          secondary: "#141416",
-          tertiary: "#1c1c1f",
-          border: "#2a2a2e",
+          primary: "var(--bg-primary)",
+          secondary: "var(--bg-secondary)",
+          tertiary: "var(--bg-tertiary)",
+          border: "var(--border-color)",
+        },
+        text: {
+          primary: "var(--text-primary)",
+          secondary: "var(--text-secondary)",
         },
         accent: {
-          DEFAULT: "#10b981",
-          hover: "#34d399",
-          glow: "rgba(16, 185, 129, 0.15)",
-          muted: "rgba(16, 185, 129, 0.08)",
+          DEFAULT: "var(--accent)",
+          hover: "var(--accent-hover)",
+          glow: "var(--accent-glow)",
+          muted: "var(--accent-glow)",
         },
       },
       keyframes: {
