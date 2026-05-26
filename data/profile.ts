@@ -61,7 +61,7 @@ export const profile: ProfileData = {
   navLinks: [
     { label: "Inicio", href: "#home" },
     { label: "Experiencia", href: "#experience" },
-    { label: "Habilidades", href: "#skills" },
+    { label: "Tech Stack", href: "#stack" },
     { label: "Educación", href: "#education" },
   ],
 
@@ -130,6 +130,20 @@ export const profile: ProfileData = {
       description:
         "Título profesional en Ingeniería de Sistemas con enfoque en desarrollo de software, bases de datos e infraestructura tecnológica. Sólidos fundamentos en algoritmos, estructuras de datos y prácticas modernas de desarrollo.",
     },
+    {
+      institution: "Platzi",
+      degree: "Rutas de Desarrollo y Automatización",
+      period: "Formación Continua",
+      description:
+        "Certificaciones enfocadas en desarrollo web moderno, arquitectura de software, metodologías ágiles y creación de proyectos con herramientas de automatización e inteligencia artificial.",
+    },
+    {
+      institution: "Udemy",
+      degree: "Cursos Especializados en Desarrollo",
+      period: "Formación Continua",
+      description:
+        "Ampliación de conocimientos técnicos mediante cursos prácticos avanzados en gestión de bases de datos, despliegue de aplicaciones y programación orientada a Vibe Coding.",
+    },
   ],
 
   skillCategories: [
@@ -145,7 +159,7 @@ export const profile: ProfileData = {
       ],
     },
     {
-      name: "Desarrollo Web",
+      name: "Vibe Coding & Desarrollo Web",
       skills: [
         "JavaScript",
         "TypeScript",

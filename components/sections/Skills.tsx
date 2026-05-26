@@ -31,11 +31,11 @@ const badgeVariants = {
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-24 md:py-32 bg-surface-secondary">
+    <section id="stack" className="py-24 md:py-32 bg-surface-secondary">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <SectionHeader
-          title="Habilidades"
-          subtitle="Tecnologías y herramientas con las que trabajo a diario para ofrecer soluciones de automatización."
+          title="Tech Stack & Herramientas"
+          subtitle="Tecnologías, lenguajes y frameworks con los que trabajo a diario para ofrecer soluciones escalables."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
