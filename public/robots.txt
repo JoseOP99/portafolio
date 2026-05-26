@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joseop99.github.io/portafolio/sitemap.xml
