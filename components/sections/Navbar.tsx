@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { profile } from "@/data/profile";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 /* ─────────────────────────────────────────────
  * Navbar — Fixed top navigation with blur
@@ -40,9 +41,9 @@ export const Navbar = () => {
           {/* Logo */}
           <Link
             href="#home"
-            className="font-display font-bold text-lg text-zinc-50 tracking-tight hover:text-emerald-400 transition-colors"
+            className="font-display font-bold text-lg text-text-primary tracking-tight hover:text-accent transition-colors"
           >
-            JCO<span className="text-emerald-500">.</span>
+            JCO<span className="text-accent">.</span>
           </Link>
 
           {/* Desktop Links */}
@@ -51,36 +52,40 @@ export const Navbar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-zinc-400 hover:text-emerald-400 transition-colors font-medium"
+                className="text-sm text-text-secondary hover:text-accent transition-colors font-medium"
               >
                 {link.label}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
-          {/* Mobile Hamburger */}
-          <button
-            onClick={() => setMobileOpen((prev) => !prev)}
-            className="md:hidden flex flex-col gap-1.5 p-2"
-            aria-label="Toggle menu"
-            id="nav-toggle"
-          >
-            <motion.span
-              className="block w-6 h-0.5 bg-zinc-300 origin-center"
-              animate={mobileOpen ? { rotate: 45, y: 4 } : { rotate: 0, y: 0 }}
-              transition={{ duration: 0.2 }}
-            />
-            <motion.span
-              className="block w-6 h-0.5 bg-zinc-300"
-              animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
-              transition={{ duration: 0.15 }}
-            />
-            <motion.span
-              className="block w-6 h-0.5 bg-zinc-300 origin-center"
-              animate={mobileOpen ? { rotate: -45, y: -4 } : { rotate: 0, y: 0 }}
-              transition={{ duration: 0.2 }}
-            />
-          </button>
+          <div className="flex md:hidden items-center gap-4">
+            <ThemeToggle />
+            {/* Mobile Hamburger */}
+            <button
+              onClick={() => setMobileOpen((prev) => !prev)}
+              className="flex flex-col gap-1.5 p-2"
+              aria-label="Toggle menu"
+              id="nav-toggle"
+            >
+              <motion.span
+                className="block w-6 h-0.5 bg-text-primary origin-center"
+                animate={mobileOpen ? { rotate: 45, y: 4 } : { rotate: 0, y: 0 }}
+                transition={{ duration: 0.2 }}
+              />
+              <motion.span
+                className="block w-6 h-0.5 bg-text-primary"
+                animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
+                transition={{ duration: 0.15 }}
+              />
+              <motion.span
+                className="block w-6 h-0.5 bg-text-primary origin-center"
+                animate={mobileOpen ? { rotate: -45, y: -4 } : { rotate: 0, y: 0 }}
+                transition={{ duration: 0.2 }}
+              />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -100,7 +105,7 @@ export const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={closeMobile}
-                  className="text-zinc-300 hover:text-emerald-400 transition-colors py-3 text-base font-medium"
+                  className="text-text-primary hover:text-accent transition-colors py-3 text-base font-medium"
                 >
                   {link.label}
                 </Link>

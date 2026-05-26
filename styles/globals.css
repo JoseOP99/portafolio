@@ -7,6 +7,24 @@
  * ───────────────────────────────────────────── */
 
 :root {
+  /* ── Tema Claro ── */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f4f5;
+  --bg-tertiary: #e4e4e7;
+  --border-color: #e4e4e7;
+  --text-primary: #18181b;
+  --text-secondary: #52525b;
+  --accent: #10b981;
+  --accent-hover: #059669;
+  --accent-glow: rgba(16, 185, 129, 0.1);
+  --radius-lg: 1.25rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+  --transition-base: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark {
+  /* ── Tema Oscuro ── */
   --bg-primary: #0a0a0b;
   --bg-secondary: #141416;
   --bg-tertiary: #1c1c1f;
@@ -16,10 +34,6 @@
   --accent: #10b981;
   --accent-hover: #34d399;
   --accent-glow: rgba(16, 185, 129, 0.15);
-  --radius-lg: 1.25rem;
-  --radius-md: 0.75rem;
-  --radius-sm: 0.5rem;
-  --transition-base: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ─────────────────────────────────────────────
@@ -167,8 +181,12 @@ body {
 .nav-blur {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background: rgba(10, 10, 11, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid var(--border-color);
+}
+
+.dark .nav-blur {
+  background: rgba(10, 10, 11, 0.8);
 }
 
 /* ─────────────────────────────────────────────
