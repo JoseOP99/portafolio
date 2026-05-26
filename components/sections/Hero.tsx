@@ -54,7 +54,7 @@ export const Hero = () => {
           {/* Eyebrow */}
           <motion.p
             variants={itemVariants}
-            className="text-emerald-400 font-medium text-sm tracking-wide uppercase mb-4"
+            className="text-accent font-medium text-sm tracking-wide uppercase mb-4"
           >
             {profile.subtitle}
           </motion.p>
@@ -62,26 +62,26 @@ export const Hero = () => {
           {/* Name */}
           <motion.h1
             variants={itemVariants}
-            className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] text-zinc-50"
+            className="font-display text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] text-text-primary"
           >
             {profile.firstName}
             <br />
-            <span className="text-zinc-400">{profile.lastName}</span>
+            <span className="text-text-secondary">{profile.lastName}</span>
           </motion.h1>
 
           {/* Title */}
           <motion.p
             variants={itemVariants}
-            className="mt-5 text-xl md:text-2xl font-display font-medium text-zinc-300"
+            className="mt-5 text-xl md:text-2xl font-display font-medium text-text-primary"
           >
-            <span className="text-emerald-400">{profile.title.split("&")[0]}&</span>
+            <span className="text-accent">{profile.title.split("&")[0]}&</span>
             {profile.title.split("&")[1]}
           </motion.p>
 
           {/* Bio */}
           <motion.p
             variants={itemVariants}
-            className="mt-6 text-zinc-400 leading-relaxed max-w-xl text-base md:text-[1.05rem]"
+            className="mt-6 text-text-secondary leading-relaxed max-w-xl text-base md:text-[1.05rem]"
           >
             {profile.bio}
           </motion.p>
@@ -117,7 +117,7 @@ export const Hero = () => {
           {/* Location */}
           <motion.p
             variants={itemVariants}
-            className="mt-6 text-zinc-500 text-sm"
+            className="mt-6 text-text-secondary text-sm"
           >
             {profile.location}
           </motion.p>
@@ -130,8 +130,8 @@ export const Hero = () => {
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
-        <div className="w-5 h-8 rounded-full border-2 border-zinc-700 flex justify-center pt-1.5">
-          <div className="w-1 h-2 rounded-full bg-zinc-500" />
+        <div className="w-5 h-8 rounded-full border-2 border-surface-border flex justify-center pt-1.5">
+          <div className="w-1 h-2 rounded-full bg-text-secondary" />
         </div>
       </motion.div>
     </section>

@@ -24,10 +24,10 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             {/* Left — Branding */}
             <div>
-              <p className="font-display text-2xl font-bold text-zinc-50 tracking-tight">
-                JCO<span className="text-emerald-500">.</span>
+              <p className="font-display text-2xl font-bold text-text-primary tracking-tight">
+                JCO<span className="text-accent">.</span>
               </p>
-              <p className="text-zinc-500 text-sm mt-1">
+              <p className="text-text-secondary text-sm mt-1">
                 {profile.title} — {profile.subtitle}
               </p>
             </div>
@@ -42,7 +42,7 @@ export const Footer = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg border border-surface-border flex items-center justify-center text-zinc-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all duration-300"
+                    className="w-10 h-10 rounded-lg border border-surface-border flex items-center justify-center text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-300"
                     aria-label={social.name}
                     id={`footer-social-${social.name.toLowerCase()}`}
                   >
@@ -55,12 +55,12 @@ export const Footer = () => {
 
           {/* Bottom bar */}
           <div className="mt-10 pt-6 border-t border-surface-border flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p className="text-zinc-600 text-xs">
+            <p className="text-text-secondary text-xs">
               &copy; {year} Jose Carlos Ortiz. Todos los derechos reservados.
             </p>
-            <p className="text-zinc-600 text-xs">
+            <p className="text-text-secondary text-xs">
               Construido con{" "}
-              <span className="text-emerald-500/60">ZENUBIT</span>
+              <span className="text-accent/60">ZENUBIT</span>
             </p>
           </div>
         </AnimateOnScroll>

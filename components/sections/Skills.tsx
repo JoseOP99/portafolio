@@ -55,7 +55,7 @@ export const Skills = () => {
                 delay: catIndex * 0.1,
               }}
             >
-              <h3 className="font-display text-lg font-semibold text-zinc-200 mb-5">
+              <h3 className="font-display text-lg font-semibold text-text-primary mb-5">
                 {category.name}
               </h3>
 

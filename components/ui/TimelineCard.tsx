@@ -43,10 +43,10 @@ export const TimelineCard = ({
       <div className="glass-card p-6 md:p-8">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
           <div>
-            <h3 className="font-display text-xl font-semibold text-zinc-50">
+            <h3 className="font-display text-xl font-semibold text-text-primary">
               {title}
             </h3>
-            <p className="text-emerald-400 font-medium text-sm mt-0.5">
+            <p className="text-accent font-medium text-sm mt-0.5">
               {subtitle}
             </p>
           </div>
@@ -55,7 +55,7 @@ export const TimelineCard = ({
           </span>
         </div>
 
-        <p className="text-zinc-400 leading-relaxed text-[0.95rem]">
+        <p className="text-text-secondary leading-relaxed text-[0.95rem]">
           {description}
         </p>
 
